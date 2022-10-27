@@ -1,0 +1,192 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>NFT Preview Card Component</title>
+    <style>
+      body {
+        background-color: #0d192c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      img {
+        max-width: 100%;
+        border-radius: 8px;
+      }
+      #box1:hover {
+        background-color: #00fff8;
+      }
+      .box {
+        background-color: #15263f;
+        border-radius: 15px;
+        padding: 24px;
+        width: 350px;
+        height: 576px;
+      }
+      .box > h1 {
+        color: white;
+        font-size: 22px;
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 600;
+      }
+      .box > p {
+        color: #8bacd9;
+        font-size: 18px;
+        font-family: verdana;
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+      }
+      .eth {
+        font-family: outfit;
+        font-weight: 600;
+        position: relative;
+        left: 19px;
+        bottom: 33px;
+        color: #00fff8;
+      }
+      #clock {
+        position: relative;
+        left: 75%;
+        bottom: 100px;
+        color: #8bacd9;
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+      }
+      #img {
+        position: relative;
+        bottom: 66px;
+        left: 68%;
+      }
+      #rectangle {
+        width: 302px;
+        height: 1px;
+        background: #2e405a;
+        position: relative;
+        bottom: 90px;
+        left: 24px;
+      }
+      #avatar {
+        width: 33px;
+        height: 33px;
+        position: relative;
+        bottom: 75px;
+        background: url();
+        border: 1px solid white;
+        border-radius: 20px;
+      }
+      #text1 {
+        color: #8bacd9;
+        position: relative;
+        bottom: 115px;
+        left: 50px;
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+      }
+      #text2 {
+        color: white;
+        position: relative;
+        bottom: 151px;
+        left: 135px;
+        font-family: "Outfit";
+        font-style: normal;
+        font-weight: 400;
+      }
+      #name:hover {
+        color: #00fff8;
+      }
+      #text2:hover {
+        color: #00fff8;
+      }
+      .container {
+        position: relative;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 350px;
+        width: 350px;
+        opacity: 0;
+        transition: 0.3s ease;
+        background-color: #008cba;
+        /* margin: 100px 0px 0px 220px; */
+        border-radius: 8px;
+      }
+
+      .container:hover .overlay {
+        opacity: 1;
+      }
+
+      .icon {
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+      .fa-user:hover {
+        color: #eee;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <img src="image-equilibrium.jpg" alt="Equilibrium" id="mainph" />
+        <div class="overlay">
+          <a href="#" class="icon" title="User Profile">
+            <img src="icon-view.svg" alt="view" class="fa fa-user" />
+          </a>
+        </div>
+      </div>
+      <h1 id="name">Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="eth.img">
+        <img src="icon-ethereum.svg" />
+      </div>
+      <div class="eth">
+        <p>0.041 ETH</p>
+      </div>
+      <div id="img">
+        <img src="icon-clock.svg" />
+      </div>
+      <div id="clock">
+        <p>3 days left</p>
+      </div>
+      <div id="rectangle"></div>
+
+      <div id="avatar">
+        <img src="image-avatar.png" />
+      </div>
+      <div id="text1">
+        <p>Creation of</p>
+      </div>
+
+      <div id="text2">
+        <p>Jules Wyvern</p>
+      </div>
+    </div>
+  </body>
+</html>
